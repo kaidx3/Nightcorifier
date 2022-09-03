@@ -54,7 +54,7 @@ static void App()
 
         if (fileArray.Length == 0)
         {
-            Console.WriteLine("There Are No Files In The Input Folder! \nPress Anything To Continue...");
+            Console.WriteLine("There Are No Files In The Input Folder! \nAdd Your Files To The Folder Then Press Anything To Continue...");
             Console.ReadKey();
             Console.Clear();
         }
@@ -99,9 +99,7 @@ static void App()
             else
             {
                 Console.Clear();
-                Console.WriteLine("Invalid Input \nPress Anything to Continue...");
-                Console.ReadKey();
-                Console.Clear();
+                ErrorMessage();
             }
 
 
