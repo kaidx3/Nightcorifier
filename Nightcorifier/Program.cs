@@ -50,11 +50,11 @@ static void App()
     while (errorCheck == true)
     {
         //create array from files in the uploads folder
-        string[] fileArray = Directory.GetFiles(@".\Assets");
+        string[] fileArray = Directory.GetFiles(@".\Input");
 
         if (fileArray.Length == 0)
         {
-            Console.WriteLine("There Are No Files In The Assets Folder! \nPress Anything To Continue...");
+            Console.WriteLine("There Are No Files In The Input Folder! \nPress Anything To Continue...");
             Console.ReadKey();
             Console.Clear();
         }
